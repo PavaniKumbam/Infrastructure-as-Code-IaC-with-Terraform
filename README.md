@@ -104,3 +104,46 @@ docker_container.nginx: Destroying...
 docker_container.nginx: Destruction complete after 1s
 Destroy complete! Resources: 1 destroyed.
 ```
+
+
+
+
+```
+## Use of this Task (Terraform + Docker setup) 
+
+Learn Infrastructure as Code (IaC):
+
+Instead of manually running docker run commands, you describe infrastructure (like Docker images & containers) in Terraform code (main.tf).
+
+This makes your setup repeatable, version-controlled, and automated.
+
+Automation of Container Deployment:
+
+With a single command (terraform apply), Terraform pulls the nginx image and runs it inside a Docker container.
+
+No need to manually type multiple Docker commands.
+
+Consistency & Reproducibility:
+
+Anyone who clones your repo can run the same Terraform commands and get the exact same environment.
+
+This reduces human errors.
+
+Real-World DevOps Practice:
+
+This task is a mini real-world project where you combine Terraform (IaC) + Docker (containerization).
+
+These two tools are widely used in DevOps for automating environments.
+
+Easy Teardown:
+
+Normally, cleaning up containers is manual (docker stop, docker rm).
+
+With Terraform, you just run terraform destroy and it removes everything cleanly.
+
+✅ In short:
+This task teaches you how to provision, manage, and destroy infrastructure automatically using Terraform.
+It’s a foundation step towards handling larger infrastructures like Kubernetes clusters or Cloud resources (AWS, Azure, GCP) using IaC.
+
+
+```
