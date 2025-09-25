@@ -17,13 +17,21 @@ This repository demonstrates provisioning a Docker container using **Terraform**
 
 terraform-docker/
 ├── main.tf # Terraform configuration file
+
 ├── terraform.tfstate # Terraform state file
+
 ├── terraform.tfstate.backup # Terraform backup state
+
 ├── tfplan # Terraform plan output
+
 ├── terraform-init.log # Init command log
+
 ├── terraform-plan.log # Plan command log
+
 ├── terraform-apply.log # Apply command log
+
 ├── terraform-destroy.log # Destroy command log
+
 └── Infrastructure-as-Code-IaC-with-Terraform/ # Sample cloned repo directory
 
 yaml
