@@ -38,7 +38,7 @@ Copy code
 terraform init
 Sample Output:
 
-bash
+```bash
 Copy code
 Initializing the backend...
 
