@@ -39,6 +39,7 @@ Copy code
 ### 1️⃣ Initialize Terraform
 
 terraform init
+
 Sample Output:
 
 ```
