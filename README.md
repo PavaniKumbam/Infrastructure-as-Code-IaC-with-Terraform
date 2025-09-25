@@ -67,25 +67,28 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 terraform apply tfplan
 Sample Output:
 
-```bash
+```
 docker_container.nginx: Creating...
 docker_container.nginx: Creation complete after 2s [id=ed7c3bd96f2b...]
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
-
+```
 
 4️⃣ Verify Docker Container
 
 docker ps
 Sample Output:
 
+```
 CONTAINER ID   IMAGE     COMMAND                  STATUS         PORTS   NAMES
 ed7c3bd96f2b   nginx     "/docker-entrypoint.…"   Up 5 seconds           nginx
+```
 5️⃣ Destroy Terraform-managed Infrastructure
 
 terraform destroy
 Sample Output:
 
-
+```
 docker_container.nginx: Destroying...
 docker_container.nginx: Destruction complete after 1s
 Destroy complete! Resources: 1 destroyed.
+```
