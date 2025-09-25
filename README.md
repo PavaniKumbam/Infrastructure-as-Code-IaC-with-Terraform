@@ -56,6 +56,7 @@ Terraform has been successfully initialized!
 
 terraform plan -out=tfplan
 
+
 Sample Output:
 ```
 docker_image.nginx: Refreshing state... [id=sha256:41...]
@@ -65,6 +66,7 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 
 3️⃣ Apply Terraform Plan
 terraform apply tfplan
+
 Sample Output:
 
 ```
@@ -76,6 +78,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 4️⃣ Verify Docker Container
 
 docker ps
+
 Sample Output:
 
 ```
@@ -85,6 +88,7 @@ ed7c3bd96f2b   nginx     "/docker-entrypoint.…"   Up 5 seconds           nginx
 5️⃣ Destroy Terraform-managed Infrastructure
 
 terraform destroy
+
 Sample Output:
 
 ```
