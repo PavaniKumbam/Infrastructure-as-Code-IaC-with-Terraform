@@ -1,0 +1,29 @@
+[0m[1mdocker_container.nginx: Refreshing state... [id=768f845d115ac0ac2d5afc31f6be41192d46bb333e3cfb7f65f1ba18956c067c][0m
+[0m[1mdocker_image.nginx: Refreshing state... [id=sha256:41f689c209100e6cadf3ce7fdd02035e90dbd1d586716bf8fc6ea55c365b2d81nginx:latest][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # docker_image.nginx[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "docker_image" "nginx" {
+      [31m-[0m[0m id           = "sha256:41f689c209100e6cadf3ce7fdd02035e90dbd1d586716bf8fc6ea55c365b2d81nginx:latest" [90m-> null[0m[0m
+      [31m-[0m[0m image_id     = "sha256:41f689c209100e6cadf3ce7fdd02035e90dbd1d586716bf8fc6ea55c365b2d81" [90m-> null[0m[0m
+      [31m-[0m[0m keep_locally = false [90m-> null[0m[0m
+      [31m-[0m[0m latest       = "sha256:41f689c209100e6cadf3ce7fdd02035e90dbd1d586716bf8fc6ea55c365b2d81" [90m-> null[0m[0m
+      [31m-[0m[0m name         = "nginx:latest" [90m-> null[0m[0m
+      [31m-[0m[0m repo_digest  = "nginx@sha256:d5f28ef21aabddd098f3dbc21fe5b7a7d7a184720bc07da0b6c9b9820e97f25e" [90m-> null[0m[0m
+    }
+
+[1mPlan:[0m 0 to add, 0 to change, 1 to destroy.
+[0m
+Changes to Outputs:
+  [31m-[0m[0m container_id   = "768f845d115ac0ac2d5afc31f6be41192d46bb333e3cfb7f65f1ba18956c067c" [90m-> null[0m[0m
+  [31m-[0m[0m container_name = "terraform-nginx" [90m-> null[0m[0m
+[0m[1mdocker_image.nginx: Destroying... [id=sha256:41f689c209100e6cadf3ce7fdd02035e90dbd1d586716bf8fc6ea55c365b2d81nginx:latest][0m[0m
+[0m[1mdocker_image.nginx: Destruction complete after 0s[0m
+[0m[1m[32m
+Destroy complete! Resources: 1 destroyed.
+[0m
