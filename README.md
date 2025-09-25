@@ -1,10 +1,10 @@
-# Infrastructure as Code (IaC) with Terraform
+# 🏗 Infrastructure as Code (IaC) with Terraform
 
 This repository demonstrates provisioning a Docker container using **Terraform** as Infrastructure as Code (IaC).  
 
 ---
 
-## Prerequisites
+##  🚀  Prerequisites
 
 - Ubuntu or Linux-based VM
 - Terraform installed
@@ -13,7 +13,7 @@ This repository demonstrates provisioning a Docker container using **Terraform**
 
 ---
 
-## Repository Structure
+## 🗂 Repository Structure
 
 terraform-docker/
 ├── main.tf # Terraform configuration file
