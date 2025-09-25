@@ -107,9 +107,9 @@ Destroy complete! Resources: 1 destroyed.
 
 
 
+## Use of this Task (Terraform + Docker setup)
 
-```
-## Use of this Task (Terraform + Docker setup) 
+``` 
 
 Learn Infrastructure as Code (IaC):
 
