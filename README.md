@@ -34,58 +34,51 @@ Copy code
 ## Steps to Run
 
 ### 1. Initialize Terraform
+## Steps to Run
+
+### 1️⃣ Initialize Terraform
 ```bash
 terraform init
 Sample Output:
 
-
-Copy code
 Initializing the backend...
 
 Initializing provider plugins...
 - Finding hashicorp/docker versions matching "~> 2.0"...
 - Installing hashicorp/docker v2.16.0...
 Terraform has been successfully initialized!
-2. Plan Terraform Changes
-bash
-Copy code
+2️⃣ Plan Terraform Changes
+
 terraform plan -out=tfplan
 Sample Output:
 
-vbnet
-Copy code
 docker_image.nginx: Refreshing state... [id=sha256:41...]
 docker_container.nginx: Refreshing state... [id=ed7c3bd96f2b...]
 Plan: 1 to add, 0 to change, 0 to destroy.
-3. Apply Terraform Plan
-bash
-Copy code
+
+3️⃣ Apply Terraform Plan
 terraform apply tfplan
 Sample Output:
 
-yaml
-Copy code
+```bash
 docker_container.nginx: Creating...
 docker_container.nginx: Creation complete after 2s [id=ed7c3bd96f2b...]
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
-4. Verify Docker Container
-bash
-Copy code
+
+
+4️⃣ Verify Docker Container
+
 docker ps
 Sample Output:
 
-mathematica
-Copy code
 CONTAINER ID   IMAGE     COMMAND                  STATUS         PORTS   NAMES
 ed7c3bd96f2b   nginx     "/docker-entrypoint.…"   Up 5 seconds           nginx
-5. Destroy Terraform-managed Infrastructure
-bash
-Copy code
+5️⃣ Destroy Terraform-managed Infrastructure
+
 terraform destroy
 Sample Output:
 
-yaml
-Copy code
+
 docker_container.nginx: Destroying...
 docker_container.nginx: Destruction complete after 1s
 Destroy complete! Resources: 1 destroyed.
