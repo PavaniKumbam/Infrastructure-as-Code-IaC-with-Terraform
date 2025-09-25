@@ -55,11 +55,13 @@ Terraform has been successfully initialized!
 2️⃣ Plan Terraform Changes
 
 terraform plan -out=tfplan
-Sample Output:
 
+Sample Output:
+```
 docker_image.nginx: Refreshing state... [id=sha256:41...]
 docker_container.nginx: Refreshing state... [id=ed7c3bd96f2b...]
 Plan: 1 to add, 0 to change, 0 to destroy.
+```
 
 3️⃣ Apply Terraform Plan
 terraform apply tfplan
