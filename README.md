@@ -37,16 +37,20 @@ Copy code
 ## Steps to Run
 
 ### 1️⃣ Initialize Terraform
-```bash
+
 terraform init
 Sample Output:
 
+```
 Initializing the backend...
 
 Initializing provider plugins...
 - Finding hashicorp/docker versions matching "~> 2.0"...
 - Installing hashicorp/docker v2.16.0...
 Terraform has been successfully initialized!
+
+```
+
 2️⃣ Plan Terraform Changes
 
 terraform plan -out=tfplan
