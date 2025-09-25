@@ -107,7 +107,7 @@ Destroy complete! Resources: 1 destroyed.
 
 
 
-## Use of this Task (Terraform + Docker setup)
+## Use of Terraform + Docker setup
 
 ``` 
 
